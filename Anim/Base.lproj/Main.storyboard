@@ -533,6 +533,7 @@
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsx-tU-A6D">
                                         <rect key="frame" x="0.0" y="85" width="170" height="170"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="170" id="2aL-X4-KPk"/>
                                         </constraints>
@@ -592,6 +593,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="we7-m0-LXm"/>
+                    <connections>
+                        <outlet property="profilePicture" destination="rsx-tU-A6D" id="Wgm-22-1Je"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHE-ac-3ot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -31,6 +31,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         
         present(imagePickerController, animated: true, completion: nil)
         
+        saveImage();
+        
     }
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

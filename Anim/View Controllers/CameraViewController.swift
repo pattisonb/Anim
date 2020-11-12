@@ -45,7 +45,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         
         let data = imageView.image?.pngData()
         
-        makeRequest(image: data!)
+//        makeRequest(image: data!)
 
         
       

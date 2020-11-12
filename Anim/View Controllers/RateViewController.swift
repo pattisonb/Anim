@@ -6,7 +6,7 @@
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
 
-import UIkit
+import UIKit
 
 class RateViewController: UIViewController {
     

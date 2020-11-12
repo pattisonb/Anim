@@ -428,7 +428,7 @@
             <objects>
                 <viewController id="vaW-6W-URD" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6Q-oR-mSS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-EG-jJH">
@@ -557,6 +557,9 @@
                                                                 <state key="normal" title="Search">
                                                                     <color key="titleColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <segue destination="vaW-6W-URD" kind="show" id="63e-Hs-0Dx"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-hZ-aDl">
                                                                 <rect key="frame" x="81" y="0.0" width="54" height="30"/>
@@ -898,6 +901,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="wet-Lm-ke1"/>
+        <segue reference="63e-Hs-0Dx"/>
         <segue reference="KNf-3Q-oyE"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -842,9 +842,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-A5-ew3">
                                         <rect key="frame" x="62" y="305" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="onClickPickImage:" destination="Cpa-Nk-5AP" eventType="touchUpInside" id="GDa-PI-UCG"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
                                         <rect key="frame" x="25" y="385" width="120" height="29.5"/>
@@ -898,9 +895,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hRO-Cf-3Qn"/>
-                    <connections>
-                        <outlet property="img" destination="bpH-Me-eo1" id="0KK-de-bU0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEa-9y-e5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

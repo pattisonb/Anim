@@ -428,7 +428,7 @@
             <objects>
                 <viewController id="vaW-6W-URD" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6Q-oR-mSS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-EG-jJH">
@@ -519,11 +519,11 @@
             <objects>
                 <viewController id="E3n-pr-flU" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ne9-bB-nwI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SPb-Pt-VSi">
-                                <rect key="frame" x="122" y="222" width="170" height="456.5"/>
+                                <rect key="frame" x="122" y="178" width="170" height="446.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfb-C5-nxf">
                                         <rect key="frame" x="22" y="0.0" width="126.5" height="35"/>
@@ -544,10 +544,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="raT-MC-7AI">
-                                        <rect key="frame" x="0.0" y="384.5" width="170" height="72"/>
+                                        <rect key="frame" x="0.0" y="384.5" width="170" height="62"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFj-MA-3Db">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="72"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="62"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-jP-n9E">
                                                         <rect key="frame" x="18" y="16" width="135" height="30"/>
@@ -900,7 +900,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wet-Lm-ke1"/>
+        <segue reference="pq4-J6-eaH"/>
         <segue reference="63e-Hs-0Dx"/>
         <segue reference="KNf-3Q-oyE"/>
     </inferredMetricsTieBreakers>

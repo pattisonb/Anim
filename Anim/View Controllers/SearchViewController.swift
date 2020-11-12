@@ -9,5 +9,17 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+              
+         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        tap.cancelsTouchesInView = false
+
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

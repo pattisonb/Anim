@@ -43,14 +43,15 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     func saveImage(){
         
-        let data = imageView.image?.pngData()
+//        let data = imageView.image?.pngData()
+        let data = imageView.image?.jpegData(compressionQuality: 0.5)
         
 //        makeRequest(image: data!)
 
         
       
         
-        AF.request("http://159.89.231.85/im_size").response { response in
+        AF.request("http://159.89.231.85:5000/im_sizeTest").response { response in
             debugPrint(response)
 
             let JSON = response.result.self
@@ -75,12 +76,12 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     }
     
     func makeRequest(image: Data) {
-      let endpointUrl: String = "http://159.89.231.85/"
+      let endpointUrl: String = "http://159.89.231.85:5000/im_sizeTest"
 
       // Use Alamofire to make a POST request
       AF.upload(
           multipartFormData: { formData in
-              formData.append(image, withName: "someName", fileName: "someName.jpg", mimeType: "image/jpg")
+              formData.append(image, withName: "image", fileName: "someName.jpeg", mimeType: "image/jpeg")
           },
           to: endpointUrl
       )

@@ -395,6 +395,7 @@
                                         </state>
                                         <connections>
                                             <action selector="savePhotoButton:" destination="FES-By-fyg" eventType="touchUpInside" id="0lt-5q-W3O"/>
+                                            <segue destination="Cpa-Nk-5AP" kind="show" id="4KH-bk-nuL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -467,6 +468,9 @@
                                                 <state key="normal" title="Profile">
                                                     <color key="titleColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Cpa-Nk-5AP" kind="show" id="CVl-em-Wxa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-QQ-hbJ">
                                                 <rect key="frame" x="77" y="0.0" width="54" height="30"/>
@@ -816,11 +820,11 @@
             <objects>
                 <viewController id="Cpa-Nk-5AP" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HqB-RP-sjg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-b3-6au">
-                                <rect key="frame" x="122" y="222" width="170" height="524.5"/>
+                                <rect key="frame" x="122" y="178" width="170" height="514.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-Ym-O4i">
                                         <rect key="frame" x="22" y="0.0" width="126.5" height="35"/>
@@ -836,20 +840,20 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-A5-ew3">
-                                        <rect key="frame" x="62" y="305" width="46" height="40"/>
+                                        <rect key="frame" x="62" y="305" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="onClickPickImage:" destination="Cpa-Nk-5AP" eventType="touchUpInside" id="GDa-PI-UCG"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
-                                        <rect key="frame" x="25" y="395" width="120" height="29.5"/>
+                                        <rect key="frame" x="25" y="385" width="120" height="29.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-NP-Rub">
-                                        <rect key="frame" x="0.0" y="474.5" width="170" height="50"/>
+                                        <rect key="frame" x="0.0" y="464.5" width="170" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-St-VFE">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="50"/>
@@ -904,6 +908,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="CVl-em-Wxa"/>
         <segue reference="mW1-xM-pRK"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -10,10 +10,9 @@ import Alamofire
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
     
-    @IBOutlet weak var emailTextField: UIStackView!
-    
-    @IBOutlet weak var passwordTextField: DesignableView!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
     

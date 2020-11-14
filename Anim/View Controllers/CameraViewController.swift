@@ -51,8 +51,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
 //        makeRequest(image: data!)
 
         
-      
-        
         AF.request("http://159.89.231.85:5000/im_sizeTest").response { response in
             debugPrint(response)
 

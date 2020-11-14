@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>272227775433-37i7gcn9hr2el7nbph90s93me7o0c6ig.apps.googleusercontent.com</string>
+	<string>290404350727-5jhekpr6fcrd021s2dlfakp0nde7mvgl.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.272227775433-37i7gcn9hr2el7nbph90s93me7o0c6ig</string>
+	<string>com.googleusercontent.apps.290404350727-5jhekpr6fcrd021s2dlfakp0nde7mvgl</string>
 	<key>API_KEY</key>
-	<string>AIzaSyA5KEZC48Bcd4K3e0-iMDqhgZPjQbSwSA8</string>
+	<string>AIzaSyAPNPQOrNjK78bBqr6wA93eDXREHmvLDsE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>272227775433</string>
+	<string>290404350727</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>ManovJain</string>
+	<string>com.animapp</string>
 	<key>PROJECT_ID</key>
-	<string>anim-d3087</string>
+	<string>anim-1d478</string>
 	<key>STORAGE_BUCKET</key>
-	<string>anim-d3087.appspot.com</string>
+	<string>anim-1d478.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:272227775433:ios:861c20b57441933dbaee18</string>
+	<string>1:290404350727:ios:f9070251e1b1ade142a3a2</string>
 	<key>DATABASE_URL</key>
-	<string>https://anim-d3087.firebaseio.com</string>
+	<string>https://anim-1d478.firebaseio.com</string>
 </dict>
 </plist>

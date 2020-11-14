@@ -7,36 +7,43 @@
 //
 
 import UIKit
-import GoogleSignIn
-import FBSDKLoginKit
+
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: NSLayoutConstraint!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-              
-         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-        tap.cancelsTouchesInView = false
-
-        view.addGestureRecognizer(tap)
+        setUpElements()
+//
+//         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+//
+//        tap.cancelsTouchesInView = false
+//
     }
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUpElements() {
+    
+        // Hide the error label
+        errorLabel.alpha = 0
     }
-    */
-
-
+    
+    @IBAction func signUpTapped(_ sender: Any) {
+    }
+    
 }

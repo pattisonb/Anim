@@ -7,13 +7,11 @@ target 'Anim' do
 
   # Pods for Anim
 
-  pod 'Alamofire'
-
-  pod 'BarcodeScanner'
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
-  pod 'FBSDKLoginKit'
-  pod 'Firebase/Analytics'
+  	pod 'Alamofire'
+  	pod 'BarcodeScanner'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Auth'	
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
   
 end

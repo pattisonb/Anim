@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()  
 //         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 //
 //        tap.cancelsTouchesInView = false

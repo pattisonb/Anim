@@ -126,15 +126,11 @@ class SignUpViewController: UIViewController {
     }
     
     func transitionToHome() {
-        
-        func transitionToHome() {
             
             let cameraViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.cameraViewController) as? CameraViewController
             
             view.window?.rootViewController = cameraViewController
             view.window?.makeKeyAndVisible()
-
-        }
         
     }
 }

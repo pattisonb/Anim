@@ -13,6 +13,7 @@
 		6E1C942F25507B960088D910 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1C942E25507B960088D910 /* DesignableView.swift */; };
 		6E3C01B425546DB800111837 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3C01B325546DB800111837 /* SignUpViewController.swift */; };
 		6E49330025548214004D7213 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4932FF25548214004D7213 /* CameraViewController.swift */; };
+		6E6B414A2560B0A40040228B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6B41492560B0A40040228B /* SearchViewController.swift */; };
 		6E7866422554F2BE0026EA61 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7866412554F2BE0026EA61 /* GalleryViewController.swift */; };
 		6E7DD41824FF0FBD00B2CB4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7DD41724FF0FBD00B2CB4F /* HomeViewController.swift */; };
 		6EEA5EBA24FE1B19007A82B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA5EB924FE1B19007A82B0 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		6E1C942E25507B960088D910 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		6E3C01B325546DB800111837 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6E4932FF25548214004D7213 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		6E6B41492560B0A40040228B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6E7866412554F2BE0026EA61 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		6E7DD41724FF0FBD00B2CB4F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6EEA5EB624FE1B19007A82B0 /* Anim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anim.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				6E7DD41724FF0FBD00B2CB4F /* HomeViewController.swift */,
 				6E4932FF25548214004D7213 /* CameraViewController.swift */,
 				6E7866412554F2BE0026EA61 /* GalleryViewController.swift */,
+				6E6B41492560B0A40040228B /* SearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEA5EBE24FE1B19007A82B0 /* ViewController.swift in Sources */,
+				6E6B414A2560B0A40040228B /* SearchViewController.swift in Sources */,
 				4C6032E2255FDBE500A8F4F8 /* Utilities.swift in Sources */,
 				6EEA5EBA24FE1B19007A82B0 /* AppDelegate.swift in Sources */,
 				6EEA5EBC24FE1B19007A82B0 /* SceneDelegate.swift in Sources */,
@@ -396,13 +400,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65XVB79PLV;
+				DEVELOPMENT_TEAM = 9HDBMQNLD8;
 				INFOPLIST_FILE = Anim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.animapp;
+				PRODUCT_BUNDLE_IDENTIFIER = animappmanov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -415,13 +419,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNT6SKZK9Y;
+				DEVELOPMENT_TEAM = 9HDBMQNLD8;
 				INFOPLIST_FILE = Anim/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.animapp;
+				PRODUCT_BUNDLE_IDENTIFIER = animappmanov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

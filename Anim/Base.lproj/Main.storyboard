@@ -353,7 +353,6 @@
         <!--Item-->
         <scene sceneID="grQ-Ws-J80">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvi-tH-0e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Ske-AY-GBm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="s8x-xd-VZl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gnf-Oy-LL6">
@@ -364,6 +363,7 @@
                         <segue destination="lkT-Mu-Df6" kind="relationship" relationship="rootViewController" id="6Xa-Je-QDK"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvi-tH-0e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3354" y="-1416"/>
         </scene>
@@ -486,7 +486,7 @@
                                 <color key="backgroundColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Lx-qU-ynB">
-                                <rect key="frame" x="0.0" y="179" width="414" height="587"/>
+                                <rect key="frame" x="0.0" y="311" width="414" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -513,6 +513,20 @@
                                     <outlet property="delegate" destination="vaW-6W-URD" id="hjg-33-CEb"/>
                                 </connections>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TO5-Rw-kBZ">
+                                <rect key="frame" x="65" y="195" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09a-xO-Rdb">
+                                <rect key="frame" x="171" y="237" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="vaW-6W-URD" eventType="touchUpInside" id="ZgK-ux-qdy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AUh-HF-s9X"/>
                         <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -520,6 +534,8 @@
                     <navigationItem key="navigationItem" id="N3N-Xi-9q9"/>
                     <connections>
                         <outlet property="searchBar" destination="Yvy-h8-7qG" id="CO1-nO-etz"/>
+                        <outlet property="searchButton" destination="09a-xO-Rdb" id="wBd-yY-he9"/>
+                        <outlet property="searchTextField" destination="TO5-Rw-kBZ" id="S91-7C-Je0"/>
                         <outlet property="tableView" destination="5Lx-qU-ynB" id="zTr-vS-ALo"/>
                     </connections>
                 </viewController>
@@ -918,7 +934,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d1z-cH-hCn"/>
         <segue reference="CVl-em-Wxa"/>
         <segue reference="6Xa-Je-QDK"/>
         <segue reference="TpG-Ds-h4d"/>

@@ -8,6 +8,7 @@ target 'Anim' do
   # Pods for Anim
 
   	pod 'Alamofire'
+	pod 'RealmSwift'
   	pod 'BarcodeScanner'
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'	

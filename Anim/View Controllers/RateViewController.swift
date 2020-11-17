@@ -20,7 +20,7 @@ class RateViewController: UIViewController ,UITableViewDelegate, UITableViewData
 
     private let realm = try! Realm()
     private var data = [Reviews]()
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t0T-9I-TQn">
@@ -819,8 +819,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TCF-RQ-9jL"/>
-        <segue reference="ntx-Mf-Itf"/>
+        <segue reference="d1z-cH-hCn"/>
+        <segue reference="TpG-Ds-h4d"/>
+        <segue reference="LJK-Pc-kQ6"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>
     <resources>

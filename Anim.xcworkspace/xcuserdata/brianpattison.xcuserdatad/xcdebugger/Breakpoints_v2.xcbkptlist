@@ -32,8 +32,100 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "SignUpViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - 13c14f25ad65448f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.emailTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - 7b6756e5fe4f78bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.emailTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - f7157efc7e5f2317"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.emailTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - 8418a7d80a9ed5b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.emailTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - 748bd015130b0888"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Anim.SignUpViewController"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "2083A9D3-B14D-4551-A9FA-E624E3A9FD1F - 6141c7035774733f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Anim.SignUpViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Anim.SignUpViewController&gt;"
+                  moduleName = "Anim"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianpattison/Desktop/Junior_Year/SE_Principles/Anim/Anim/View%20Controllers/SignUpViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

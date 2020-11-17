@@ -32,7 +32,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ANIM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIw-8w-5Dw">
                                                 <rect key="frame" x="16" y="8" width="382" height="33"/>
-                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                                 <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -59,7 +59,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="DFT-fo-Ysd"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                                 <state key="normal" title="LOGIN">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -188,7 +188,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-m5-OmX">
                                         <rect key="frame" x="16" y="8" width="382" height="33"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -227,7 +227,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="bFw-7T-vc1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                         <state key="normal" title="CONTINUE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -289,7 +289,7 @@
             <objects>
                 <viewController storyboardIdentifier="CameraVC" id="FES-By-fyg" customClass="CameraViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U1y-0z-y6x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="16" affinity="minX"/>
@@ -305,7 +305,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="B6Q-Y4-ufZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                         <state key="normal" title="Take Photo">
                                             <color key="titleColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -316,7 +316,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ8-5n-2Hc">
                                         <rect key="frame" x="213" y="8" width="193" height="50"/>
                                         <color key="backgroundColor" red="0.34149110319999998" green="0.72949165110000003" blue="0.38032722470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="28"/>
                                         <state key="normal" title="Profile">
                                             <color key="titleColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -350,31 +350,37 @@
             </objects>
             <point key="canvasLocation" x="1745" y="-277"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="grQ-Ws-J80">
             <objects>
-                <navigationController id="Ske-AY-GBm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="s8x-xd-VZl"/>
+                <navigationController navigationBarHidden="YES" id="Ske-AY-GBm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="smiley-smile" selectedImage="smiley-smile" id="s8x-xd-VZl"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gnf-Oy-LL6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="lkT-Mu-Df6" kind="relationship" relationship="rootViewController" id="6Xa-Je-QDK"/>
+                        <segue destination="Cpa-Nk-5AP" kind="relationship" relationship="rootViewController" id="fVN-Ox-hkf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvi-tH-0e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3354" y="-1416"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="je5-mS-2wr">
             <objects>
-                <navigationController id="HnI-mJ-aig" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1hE-Sq-sVW"/>
+                <navigationController navigationBarHidden="YES" id="HnI-mJ-aig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="search-7" selectedImage="search-7" id="1hE-Sq-sVW"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pjP-QD-TqE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="vaW-6W-URD" kind="relationship" relationship="rootViewController" id="TpG-Ds-h4d"/>
@@ -384,14 +390,17 @@
             </objects>
             <point key="canvasLocation" x="2541" y="-1416"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="zyb-sI-6wD">
             <objects>
-                <navigationController id="fMa-Vt-06f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LqO-DZ-ar1"/>
+                <navigationController navigationBarHidden="YES" id="fMa-Vt-06f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="camera-7" selectedImage="camera-7" id="LqO-DZ-ar1"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OES-gg-K6G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="FES-By-fyg" kind="relationship" relationship="rootViewController" id="lhY-ZX-9gt"/>
@@ -406,15 +415,17 @@
             <objects>
                 <tabBarController id="71q-fx-cr3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Va3-fN-bd8"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2UY-Xt-6JV">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2UY-Xt-6JV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="fMa-Vt-06f" kind="relationship" relationship="viewControllers" id="9wI-UQ-nLR"/>
-                        <segue destination="HnI-mJ-aig" kind="relationship" relationship="viewControllers" id="WgA-es-a3u"/>
-                        <segue destination="Ske-AY-GBm" kind="relationship" relationship="viewControllers" id="1oc-hY-ojC"/>
+                        <segue destination="HnI-mJ-aig" kind="relationship" relationship="viewControllers" id="UmY-AO-heL"/>
+                        <segue destination="fMa-Vt-06f" kind="relationship" relationship="viewControllers" id="2RC-n7-obi"/>
+                        <segue destination="Ske-AY-GBm" kind="relationship" relationship="viewControllers" id="Ded-wl-OLJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73I-QA-3wh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -426,7 +437,7 @@
             <objects>
                 <viewController id="vaW-6W-URD" customClass="SearchViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6Q-oR-mSS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-EG-jJH">
@@ -434,11 +445,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-Ud-WOo">
-                                        <rect key="frame" x="63" y="8" width="329" height="75"/>
+                                        <rect key="frame" x="77" y="8" width="329" height="75"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH A PRODUCT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bV-Ig-3nw">
-                                                <rect key="frame" x="0.0" y="0.0" width="289" height="35"/>
-                                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263.5" height="35"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                                 <color key="textColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -489,6 +500,7 @@
                                 <rect key="frame" x="0.0" y="311" width="414" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="6qB-TX-Vfa" style="IBUITableViewCellStyleDefault" id="1uJ-We-zAc">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -505,6 +517,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -556,9 +570,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRODUCT'S NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM0-0I-nPI">
-                                        <rect key="frame" x="81" y="8" width="253" height="35"/>
+                                        <rect key="frame" x="91" y="8" width="234" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <color key="textColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -667,16 +681,16 @@
                                 <color key="backgroundColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sustainable?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhd-We-gTq">
-                                <rect key="frame" x="120" y="585" width="174" height="28"/>
+                                <rect key="frame" x="144" y="585" width="127" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                 <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YES or NO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErU-HX-4m6">
-                                <rect key="frame" x="142" y="621" width="131" height="28"/>
+                                <rect key="frame" x="156" y="621" width="104" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                 <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -710,9 +724,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRODUCTS NAME REVIEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiB-9Q-cg1">
-                                        <rect key="frame" x="18" y="8" width="380" height="35"/>
+                                        <rect key="frame" x="32" y="8" width="352" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <color key="textColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -727,7 +741,8 @@
                                         <rect key="frame" x="30" y="16" width="135" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AyB-RZ-8nG">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="32"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
                                                 <state key="normal" title="Back to Product">
                                                     <color key="titleColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -849,40 +864,40 @@
             <objects>
                 <viewController id="Cpa-Nk-5AP" customClass="ProfileViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HqB-RP-sjg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-b3-6au">
-                                <rect key="frame" x="122" y="234" width="170" height="409.5"/>
+                                <rect key="frame" x="122" y="178" width="170" height="465.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-Ym-O4i">
-                                        <rect key="frame" x="22" y="0.0" width="126.5" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-Ym-O4i">
+                                        <rect key="frame" x="29" y="0.0" width="112" height="35"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-Me-eo1" userLabel="UIImageView">
-                                        <rect key="frame" x="0.0" y="50" width="170" height="170"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-Me-eo1" userLabel="UIImageView">
+                                        <rect key="frame" x="0.0" y="85" width="170" height="170"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="170" id="ylI-wJ-3Lt"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-A5-ew3">
-                                        <rect key="frame" x="62" y="270" width="46" height="10"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-A5-ew3">
+                                        <rect key="frame" x="62" y="305" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
-                                        <rect key="frame" x="25" y="330" width="120" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
+                                        <rect key="frame" x="25" y="385" width="120" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-NP-Rub">
-                                        <rect key="frame" x="0.0" y="409.5" width="170" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="464.5" width="170" height="1"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-St-VFE">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="1"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-mG-e6G">
                                                         <rect key="frame" x="18" y="16" width="135" height="30"/>
@@ -934,13 +949,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CVl-em-Wxa"/>
-        <segue reference="6Xa-Je-QDK"/>
+        <segue reference="fVN-Ox-hkf"/>
         <segue reference="TpG-Ds-h4d"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Untitled_Artwork copy" width="1536" height="1536"/>
+        <image name="camera-7" width="30" height="30"/>
+        <image name="search-7" width="30" height="30"/>
+        <image name="smiley-smile" width="30" height="30"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

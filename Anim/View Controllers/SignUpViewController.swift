@@ -29,15 +29,15 @@ class SignUpViewController: UIViewController {
         
         setUpElements()
 //
-//         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//
-//        tap.cancelsTouchesInView = false
-//
+         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        tap.cancelsTouchesInView = false
+
     }
 
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     func setUpElements() {
     

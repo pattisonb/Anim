@@ -22,17 +22,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
-//         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-//
-//        tap.cancelsTouchesInView = false
-//
-//        view.addGestureRecognizer(tap)
+         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        tap.cancelsTouchesInView = false
+
+        view.addGestureRecognizer(tap)
     }
     
-//    @objc func dismissKeyboard() {
-//        view.endEditing(true)
-//    }
-//
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+
     func setUpElements() {
     
         // Hide the error label

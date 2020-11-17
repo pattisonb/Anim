@@ -756,16 +756,16 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
-                                        <rect key="frame" x="25" y="385" width="120" height="29.5"/>
-                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                        <rect key="frame" x="25" y="385" width="120" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-NP-Rub">
-                                        <rect key="frame" x="0.0" y="464.5" width="170" height="1"/>
+                                        <rect key="frame" x="0.0" y="463" width="170" height="2.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKR-St-VFE">
-                                                <rect key="frame" x="0.0" y="0.0" width="170" height="1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="2.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-mG-e6G">
                                                         <rect key="frame" x="18" y="16" width="135" height="30"/>
@@ -817,7 +817,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TpG-Ds-h4d"/>
+        <segue reference="TCF-RQ-9jL"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>
     <resources>

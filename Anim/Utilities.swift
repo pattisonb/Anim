@@ -1,9 +1,9 @@
 //
 //  Utilities.swift
-//  customauth
 //
-//  Created by Christopher Ching on 2019-05-09.
-//  Copyright © 2019 Christopher Ching. All rights reserved.
+//
+//  Created by Maria Heredia on 11/4/20.
+//  Copyright © 2020 Maria Heredia. All rights reserved.
 //
 
 import Foundation

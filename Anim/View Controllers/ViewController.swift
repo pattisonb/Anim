@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Anim
 //
-//  Created by Manov Jain on 9/1/20.
-//  Copyright © 2020 ManovJain. All rights reserved.
+//  Created by Maria Heredia on 11/14/20.
+//  Copyright © 2020 Maria Heredia. All rights reserved.
 //
 import UIKit
 import Alamofire

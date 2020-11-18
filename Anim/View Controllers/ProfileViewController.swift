@@ -21,8 +21,7 @@ class ProfileViewController: UIViewController {
         
         if let user = user {
             
-            let firstName = user.uid
-            print(firstName)
+            let firstName = user.email
             self.Name.text = firstName;
           }
     }

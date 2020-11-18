@@ -41,13 +41,13 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fD8-Wk-ZAx">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-zl-OWQ">
                                                         <rect key="frame" x="0.0" y="50" width="382" height="34"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
@@ -70,7 +70,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19z-p6-Dbe"/>
-                                                    <segue destination="71q-fx-cr3" kind="show" id="LJK-Pc-kQ6"/>
+                                                    <segue destination="71q-fx-cr3" kind="show" id="tMN-Vf-d3f"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-dC-dRP">
@@ -178,7 +178,7 @@
             <objects>
                 <viewController id="smE-eK-FDQ" customClass="SignUpViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wPy-Du-3Hd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="398" affinity="maxX"/>
@@ -206,25 +206,25 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Po6-JI-nLA">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zWv-19-6ld">
                                                 <rect key="frame" x="0.0" y="50" width="382" height="34"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RgR-Z8-AV7">
                                                 <rect key="frame" x="0.0" y="100" width="382" height="34"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abJ-1a-gTe">
                                                 <rect key="frame" x="0.0" y="150" width="382" height="34"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -699,23 +699,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-b3-6au">
-                                <rect key="frame" x="122" y="178" width="170" height="465.5"/>
+                                <rect key="frame" x="32" y="178" width="350" height="465.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-Ym-O4i">
-                                        <rect key="frame" x="29" y="0.0" width="112" height="35"/>
+                                        <rect key="frame" x="119" y="0.0" width="112" height="35"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-Me-eo1" userLabel="UIImageView">
-                                        <rect key="frame" x="0.0" y="85" width="170" height="170"/>
+                                        <rect key="frame" x="0.0" y="85" width="350" height="170"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="170" id="ylI-wJ-3Lt"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
-                                        <rect key="frame" x="25" y="305" width="120" height="160.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-3z-yvu">
+                                        <rect key="frame" x="25" y="305" width="300" height="160.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="B2X-Zx-tca"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
                                         <color key="textColor" red="0.054107762869999999" green="0.74264639619999995" blue="0.33370578290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -723,7 +726,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="IRf-3z-yvu" firstAttribute="leading" secondItem="t4a-b3-6au" secondAttribute="leading" constant="25" id="2cw-Gy-OfH"/>
+                                    <constraint firstItem="IRf-3z-yvu" firstAttribute="centerX" secondItem="t4a-b3-6au" secondAttribute="centerX" id="8xJ-zy-vLk"/>
                                     <constraint firstItem="bpH-Me-eo1" firstAttribute="leading" secondItem="t4a-b3-6au" secondAttribute="leadingMargin" id="ZrF-4N-hBW"/>
+                                    <constraint firstItem="IRf-3z-yvu" firstAttribute="centerX" secondItem="t4a-b3-6au" secondAttribute="centerX" id="vy5-1h-jYW"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -731,9 +736,10 @@
                         <color key="backgroundColor" red="0.32936486599999998" green="0.32147735360000002" blue="0.32549116020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="joM-0L-Z3H" firstAttribute="bottom" secondItem="t4a-b3-6au" secondAttribute="bottom" constant="115.5" id="0W4-LW-YYN"/>
-                            <constraint firstItem="t4a-b3-6au" firstAttribute="centerX" secondItem="HqB-RP-sjg" secondAttribute="centerX" id="8aQ-eW-byR"/>
                             <constraint firstItem="t4a-b3-6au" firstAttribute="top" secondItem="joM-0L-Z3H" secondAttribute="top" constant="178" id="FVa-oR-ddV"/>
-                            <constraint firstItem="t4a-b3-6au" firstAttribute="leading" secondItem="joM-0L-Z3H" secondAttribute="leading" constant="122" id="SJ1-Uv-5Iu"/>
+                            <constraint firstItem="t4a-b3-6au" firstAttribute="top" secondItem="joM-0L-Z3H" secondAttribute="top" constant="178" id="lgS-iq-7or"/>
+                            <constraint firstAttribute="trailing" secondItem="t4a-b3-6au" secondAttribute="trailing" constant="32" id="vp0-VY-NHu"/>
+                            <constraint firstItem="t4a-b3-6au" firstAttribute="leading" secondItem="joM-0L-Z3H" secondAttribute="leading" constant="32" id="zXj-gr-cyM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hRO-Cf-3Qn"/>
@@ -756,9 +762,6 @@
         <image name="camera-7" width="30" height="30"/>
         <image name="search-7" width="30" height="30"/>
         <image name="smiley-smile" width="30" height="30"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -624,12 +624,12 @@
                                 <rect key="frame" x="0.0" y="250" width="414" height="409"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-Js-nvo">
-                                <rect key="frame" x="162" y="138" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cx-ID-rlz">
+                                <rect key="frame" x="155" y="143" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="ADD REVIEW"/>
                                 <connections>
-                                    <segue destination="xCL-7R-1up" kind="show" id="8oO-ML-MXS"/>
+                                    <action selector="didTapAddButton:" destination="Kup-vm-YAY" eventType="touchUpInside" id="UR5-nt-5Y8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -658,7 +658,7 @@
             <objects>
                 <viewController storyboardIdentifier="enter" id="xCL-7R-1up" customClass="EntryViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TSm-76-JlU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="clu-fW-5sG">
@@ -669,6 +669,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrr-Ud-J15">
+                                <rect key="frame" x="189" y="93" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="didTapSaveButton:" destination="xCL-7R-1up" eventType="touchUpInside" id="u27-ER-gQy"/>
+                                    <segue destination="Kup-vm-YAY" kind="show" id="Psx-ag-H8J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pNz-0l-VHM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -684,6 +693,7 @@
                     <navigationItem key="navigationItem" id="XVd-k8-iFU"/>
                     <connections>
                         <outlet property="datePicker" destination="clu-fW-5sG" id="BpQ-qC-K3B"/>
+                        <outlet property="textField" destination="Ljs-VM-fk7" id="GhI-13-bYF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGo-vS-Mak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -753,6 +763,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Psx-ag-H8J"/>
         <segue reference="ntx-Mf-Itf"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>

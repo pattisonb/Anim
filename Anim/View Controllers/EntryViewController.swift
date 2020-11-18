@@ -23,8 +23,6 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         textField.becomeFirstResponder()
         textField.delegate = self
         datePicker.setDate(Date(), animated: true)
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(didTapSaveButton))
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -32,7 +30,8 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
-    @objc func didTapSaveButton() {
+    @IBAction func didTapSaveButton(_ sender: Any) {
+        
         if let text = textField.text, !text.isEmpty {
             let date = datePicker.date
 
@@ -43,12 +42,12 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
             realm.add(newItem)
             try! realm.commitWrite()
 
-            completionHandler?()
-            navigationController?.popToRootViewController(animated: true)
+            //completionHandler?()
         }
         else {
             print("Add something")
         }
+        
     }
 
 }

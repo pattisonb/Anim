@@ -47,7 +47,8 @@ class RateViewController: UIViewController ,UITableViewDelegate, UITableViewData
         
     }
     
-    @IBAction func didTapAddButton() {
+    @IBAction func didTapAddButton(_ sender: Any) {
+        
         guard let vc = storyboard?.instantiateViewController(identifier: "enter") as? EntryViewController else {
             return
         }

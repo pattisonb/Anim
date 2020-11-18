@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var Name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let user = Auth.auth().currentUser
+        
+        if let user = user {
+            
+            let firstName = user.uid
+            print(firstName)
+            self.Name.text = firstName;
+          }
     }
     
 

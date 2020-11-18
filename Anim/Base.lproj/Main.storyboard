@@ -693,7 +693,7 @@
         <!--Profile View Controller-->
         <scene sceneID="VeT-PI-LKO">
             <objects>
-                <viewController id="Cpa-Nk-5AP" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController id="Cpa-Nk-5AP" customClass="ProfileViewController" customModule="Anim" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HqB-RP-sjg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -737,6 +737,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hRO-Cf-3Qn"/>
+                    <connections>
+                        <outlet property="Name" destination="IRf-3z-yvu" id="3N4-RD-2EI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEa-9y-e5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

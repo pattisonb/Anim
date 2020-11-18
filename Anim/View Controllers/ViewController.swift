@@ -57,9 +57,9 @@ class ViewController: UIViewController {
             }
             else {
                 
-                let searchViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.searchViewController) as? SearchViewController
+                let tabViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as? TabViewController
 
-                self.view.window?.rootViewController = searchViewController
+                self.view.window?.rootViewController = tabViewController
                 self.view.window?.makeKeyAndVisible()
             }
         }

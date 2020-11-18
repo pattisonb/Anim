@@ -128,9 +128,9 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
             
-            let searchViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.searchViewController) as? SearchViewController
+            let tabViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as? TabViewController
             
-            view.window?.rootViewController = searchViewController
+            view.window?.rootViewController = tabViewController
             view.window?.makeKeyAndVisible()
         
     }

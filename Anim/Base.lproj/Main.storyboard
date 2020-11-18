@@ -178,7 +178,7 @@
             <objects>
                 <viewController id="smE-eK-FDQ" customClass="SignUpViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wPy-Du-3Hd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="398" affinity="maxX"/>
@@ -665,12 +665,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="clu-fW-5sG">
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="clu-fW-5sG">
                                 <rect key="frame" x="0.0" y="372" width="414" height="216"/>
                             </datePicker>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-VM-fk7">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ljs-VM-fk7">
                                 <rect key="frame" x="159" y="233" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -678,7 +677,12 @@
                         <viewLayoutGuide key="safeArea" id="pNz-0l-VHM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ljs-VM-fk7" firstAttribute="top" secondItem="pNz-0l-VHM" secondAttribute="top" constant="233" id="2ar-5l-OKs"/>
+                            <constraint firstItem="clu-fW-5sG" firstAttribute="centerX" secondItem="Ljs-VM-fk7" secondAttribute="centerX" id="3oK-i8-evZ"/>
                             <constraint firstItem="pNz-0l-VHM" firstAttribute="bottom" secondItem="clu-fW-5sG" secondAttribute="bottom" constant="400" id="Abf-tk-ehV"/>
+                            <constraint firstItem="Ljs-VM-fk7" firstAttribute="leading" secondItem="pNz-0l-VHM" secondAttribute="leading" constant="159" id="Ahe-F1-DEt"/>
+                            <constraint firstItem="clu-fW-5sG" firstAttribute="leading" secondItem="pNz-0l-VHM" secondAttribute="leading" id="FL8-CU-IFi"/>
+                            <constraint firstItem="clu-fW-5sG" firstAttribute="centerX" secondItem="TSm-76-JlU" secondAttribute="centerX" id="lTf-4N-zSm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XVd-k8-iFU"/>
@@ -744,7 +748,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LJK-Pc-kQ6"/>
+        <segue reference="ntx-Mf-Itf"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>
     <resources>

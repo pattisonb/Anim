@@ -25,6 +25,7 @@
 		6EEA5EC324FE1B1A007A82B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA5EC224FE1B1A007A82B0 /* Assets.xcassets */; };
 		6EEA5EC624FE1B1A007A82B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEA5EC424FE1B1A007A82B0 /* LaunchScreen.storyboard */; };
 		820DA28730CC9D12BE0216C2 /* Pods_Anim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F466784C31B3EBB8FF61B5B /* Pods_Anim.framework */; };
+		D812703A2564D76200682E81 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81270392564D76200682E81 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		6EEA5EC724FE1B1A007A82B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F466784C31B3EBB8FF61B5B /* Pods_Anim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64CC49A2B7E48BAC6E2603E /* Pods-Anim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anim.debug.xcconfig"; path = "Target Support Files/Pods-Anim/Pods-Anim.debug.xcconfig"; sourceTree = "<group>"; };
+		D81270392564D76200682E81 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E7A7BB7D8F40DC982C322FAD /* Pods-Anim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anim.release.xcconfig"; path = "Target Support Files/Pods-Anim/Pods-Anim.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				6EEA5EBD24FE1B19007A82B0 /* ViewController.swift */,
 				6E7DD41724FF0FBD00B2CB4F /* HomeViewController.swift */,
 				6E4932FF25548214004D7213 /* CameraViewController.swift */,
+				D81270392564D76200682E81 /* ProfileViewController.swift */,
 				6E7866412554F2BE0026EA61 /* GalleryViewController.swift */,
 				6E6B41492560B0A40040228B /* SearchViewController.swift */,
 				4C5A2B6025646E53008FB741 /* RateViewController.swift */,
@@ -252,6 +255,7 @@
 				6E6B414A2560B0A40040228B /* SearchViewController.swift in Sources */,
 				4C6032E2255FDBE500A8F4F8 /* Utilities.swift in Sources */,
 				6EEA5EBA24FE1B19007A82B0 /* AppDelegate.swift in Sources */,
+				D812703A2564D76200682E81 /* ProfileViewController.swift in Sources */,
 				6EEA5EBC24FE1B19007A82B0 /* SceneDelegate.swift in Sources */,
 				4C5A2B6425646FA3008FB741 /* EntryViewController.swift in Sources */,
 				6E3C01B425546DB800111837 /* SignUpViewController.swift in Sources */,

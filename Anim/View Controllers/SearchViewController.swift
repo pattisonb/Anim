@@ -36,25 +36,25 @@ class SearchViewController: UIViewController {
 
     
     @IBAction func searchButton(_ sender: Any) {
-       var search = searchTextField.text
-        var url = "http://159.89.231.85:5000/foodSearch/"
+//       var search = searchTextField.text
+//        var url = "http://159.89.231.85:5000/foodSearch/"
+//
+//        var barsearch = url + search!
+//
+//
+//        AF.request(barsearch).response { response in
+//            debugPrint(response)
+//        }
         
-        var barsearch = url + search!
         
-        
-        AF.request(barsearch).response { response in
-            debugPrint(response)
-        }
-        
-        
-        let str = "{\"names\": [\"Bob\", \"Tim\", \"Tina\"]}"
+        let str = "{ \"image\": [\"img.jpg\"], \"foodName\": [\"Food name\"], \"dietLabels\": [\"Low Carb\"], \"allergyLabels\": [\"Dairy Free\", \"Milk Free\", \"Peanut Free\", \"Tree Nut Free\", \"Soy Free\", \"Fish Free\", \"Shellfish Free\", \"Alcohol Free\"], \"health\": [0], \"nutritionalData\": [[\"Energy\", \"1461.59kcal\"], [\"Fat\", \"104.18g\"], [\"Carbs\", \"27.64g\"], [\"Sugars\", \"15.06g\"], [\"Protein\", \"98.16g\"], [\"Fiber\", 3.59, \"g\"], [\"Sodium\", 446.2, \"mg\"]], \"nutritionalTags\": [\"High Fat\", \"Low Fiber\", \"High Protein\", \"High Cholesterol\"], \"unsustainable\": [\"Palm Oil\"] }"
         let data = Data(str.utf8)
 
         do {
             // make sure this JSON is in the format we expect
             if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                 // try to read out a string array
-                if let names = json["names"] as? [String] {
+                if let names = json["nutritionalData"] as? [String] {
                     print(names)
                 }
             }

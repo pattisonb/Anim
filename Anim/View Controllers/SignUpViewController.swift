@@ -110,7 +110,9 @@ class SignUpViewController: UIViewController {
                             self.showError("Error saving user data")
                         }
                     }
-                
+                    
+                    // Transition to the home screen
+                    self.transitionToHome()
                 }
         
             }
@@ -126,9 +128,9 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome() {
             
-            let cameraViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.cameraViewController) as? CameraViewController
+            let searchViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.searchViewController) as? SearchViewController
             
-            view.window?.rootViewController = cameraViewController
+            view.window?.rootViewController = searchViewController
             view.window?.makeKeyAndVisible()
         
     }

@@ -38,8 +38,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 imagePicker.allowsEditing = true
                 self.present(imagePicker, animated: true, completion: nil)
             }
-        
-        
+    
     }
     
     /*

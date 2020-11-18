@@ -57,10 +57,10 @@ class ViewController: UIViewController {
             }
             else {
                 
-//                let cameraViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.cameraViewController) as? CameraViewController
-//
-//                self.view.window?.rootViewController = cameraViewController
-//                self.view.window?.makeKeyAndVisible()
+                let searchViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.searchViewController) as? SearchViewController
+
+                self.view.window?.rootViewController = searchViewController
+                self.view.window?.makeKeyAndVisible()
             }
         }
         

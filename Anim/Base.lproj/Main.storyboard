@@ -70,7 +70,6 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19z-p6-Dbe"/>
-                                                    <segue destination="71q-fx-cr3" kind="show" id="tMN-Vf-d3f"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-dC-dRP">
@@ -178,7 +177,7 @@
             <objects>
                 <viewController id="smE-eK-FDQ" customClass="SignUpViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wPy-Du-3Hd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="398" affinity="maxX"/>
@@ -247,7 +246,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="signUpTapped:" destination="smE-eK-FDQ" eventType="touchUpInside" id="C5q-Hk-Y1v"/>
-                                            <segue destination="71q-fx-cr3" kind="show" id="ntx-Mf-Itf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -433,7 +431,7 @@
         <!--Search View Controller-->
         <scene sceneID="G0T-3w-dx3">
             <objects>
-                <viewController id="vaW-6W-URD" customClass="SearchViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchVC" id="vaW-6W-URD" customClass="SearchViewController" customModule="Anim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6Q-oR-mSS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -678,6 +676,10 @@
                                     <segue destination="Kup-vm-YAY" kind="show" id="Psx-ag-H8J"/>
                                 </connections>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="I2k-ov-21k">
+                                <rect key="frame" x="159" y="708" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pNz-0l-VHM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -764,7 +766,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Psx-ag-H8J"/>
-        <segue reference="ntx-Mf-Itf"/>
         <segue reference="Jl4-zl-tTl"/>
     </inferredMetricsTieBreakers>
     <resources>

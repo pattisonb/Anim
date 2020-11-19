@@ -44,8 +44,6 @@ class RateViewController: UIViewController ,UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
-        // Open the screen where we can see item info and dleete
         
     }
     

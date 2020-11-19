@@ -37,9 +37,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         present(imagePickerController, animated: true, completion: nil)
         
         
-        // ????
-        //saveImage();
-        
     }
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -47,7 +44,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
         
     imageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
     
-    //????
     saveImage();
     }
     
@@ -55,35 +51,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     func saveImage(){
         
-//        let data = imageView.image?.pngData()
-        let data = imageView.image?.jpegData(compressionQuality: 0.5)
-        makeRequest(image: data!)
+        let data = imageView.image?.jpegData(compressionQuality: 1)
+        completionHandler?(data)
+        dismiss(animated: true, completion: nil)
 
-        AF.request("http://159.89.231.85:5000/barcode").response { response in
-            debugPrint(response)
-        
-            
-            let JSON = response.result.self
-            print(JSON)
-        }
-            //sending data back to productView
-            completionHandler?(JSON)
-            dismiss(animated: true, completion: nil)
-        
     }
-    
-    
-    @IBAction func savePhotoButton(_ sender: Any) {
-        print("button pressed")
-        saveImage()
-        print("saveimage")
-        
-    }
-    
-    
-    @IBAction func galleryButton(_ sender: Any) {
-        performSegue(withIdentifier: "gallerySegue", sender: self)
-    }
+
+
     
     func makeRequest(image: Data) {
       let endpointUrl: String = "http://159.89.231.85:5000/barcode"

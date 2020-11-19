@@ -33,7 +33,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var search: UIButton!
     
     //variables
-    var recievedjson: String?
+    var recievedSearch: String?
     var data: Data?
     
     
@@ -43,142 +43,320 @@ class ProductViewController: UIViewController {
 
     }
     
+    
+        func makeRequest(image: Data) {
+              let endpointUrl: String = "http://159.89.231.85:5000/barcode"
+
+              // Use Alamofire to make a POST request
+              AF.upload(
+                  multipartFormData: { formData in
+                      formData.append(image, withName: "image", fileName: "someName.jpeg", mimeType: "image/jpeg")
+                  },
+                  to: endpointUrl
+              )
+              .response { response in
+                // Do something with the response
+                // Or - create a struct called ResponseDTO, also conforming to Codable
+                // And use `responseDecodable`
+              }
+                print("sent")
+            }
+    
      
-//    @IBAction func didTapScan(_ sender: Any) {
-//        let vc = storyboard?.instantiateViewController(identifier: "CameraVC") as! CameraViewController
-//        vc.modalPresentationStyle = .fullScreen
-//        vc.completionHandler = {text in
-//            print(text)
-//            self.recievedjson = text!
-//            self.createInfo(inputString: self.recievedjson!)
-//        }
-//        present(vc,animated: true)
-//
-//    }
+    @IBAction func didTapScan(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "CameraVC") as! CameraViewController
+        vc.modalPresentationStyle = .fullScreen
+        vc.completionHandler = {text in
+            self.data = text
+            self.makeRequest(image: self.data!)
+            self.getInfoFromScan()
+        }
+        present(vc,animated: true)
+
+    }
     
     
     @IBAction func didTapSearch(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "SearchVC") as! SearchViewController
         vc.modalPresentationStyle = .fullScreen
         vc.completionHandler = {text in
-            
-            var url = "http://159.89.231.85:5000/foodSearch/"
-            var barsearch = url + text!
-            
-//            AF.request(barsearch).responseString { response in
-//                debugPrint(response)
-                
-            AF.request(barsearch)
-                   .responseString { response in
-                       print("response: \(response)")
-                       switch response.result {
-                       case .success(let value):
-                        self.recievedjson = value
-                           print("value**: \(value)")
-                        self.createInfo(inputString: self.recievedjson!)
-                           print(type(of: value))
-                        
-                        
-                       case .failure(let error):
-                           print(error)
-                        
-                        
-                       }
-                   }
-            
-//            print("SUCCESS")
-//            print(self.recievedjson)
-//
-//            self.createInfo(inputString: self.recievedjson!)
-//
-                
-        }
-        
-        
-        
-        
-            
-        
-        present(vc,animated: true)
+            self.recievedSearch = text
+            self.getInfoFromSearch(inputString: self.recievedSearch!)
+       }
+                present(vc,animated: true)
     }
     
-    func createInfo (inputString: String){
-        self.data = Data(inputString.utf8)
+
+    
+    func getInfoFromSearch(inputString: String){
+        var url = "http://159.89.231.85:5000/foodSearch"
         
-        print("test")
-        print(inputString)
-        print(data)
+        var firstUrl = url + "/" + inputString
         
-        do {
-            // make sure this JSON is in the format we expect
-            if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {
-                // try to read out a string array
-                if let imageArr = json["image"] as? [String] {
-                    let fileUrl = URL(string: imageArr[0])!
-                    
-                    print("Image")
-                    
+        AF.request(firstUrl).response { response in
+                   debugPrint(response)
+        }
+        
+        //Getting Food Image from search
+        var barsearch = url + "Image"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //getting image from URL
+                    let fileUrl = URL(string: value)!
                     DispatchQueue.global().async { [weak self] in
                         if let data = try? Data(contentsOf: fileUrl) {
                                    if let image = UIImage(data: data) {
                                        DispatchQueue.main.async {
+                                        //displaying image
                                         self?.productImage.image = image
                                        }
                                    }
                                }
                            }
-                    
-                    
-                    print(imageArr)
-                }
-                if let foodName = json["foodName"] as? [String] {
-                    print(foodName)
-                    productNameLabel.text = foodName[0]
-                }
-                if let dietLabels = json["dietLabels"] as? [String] {
-                    print(dietLabels)
-                }
-                if let allergyLabels = json["allergyLabels"] as? [String] {
-                    print(allergyLabels)
-                }
-                if let health = json["health"] as? [String] {
-                    print(health)
-                }
-//                if let energy = json["Energy"] as? [String] {
-//                    print(energy)
-//                }
-//                if let fat = json["Fat"] as? [String] {
-//                    print(fat)
-//                }
-//                if let carbs = json["Carbs"] as? [String] {
-//                    print(carbs)
-//                }
-//                if let sugar = json["Sugars"] as? [String] {
-//                    print(sugar)
-//                }
-//                if let protein = json["Protein"] as? [String] {
-//                    print(protein)
-//                }
-//                if let fiber = json["Fiber"] as? [String] {
-//                    print(fiber)
-//                }
-//                if let sodium = json["Sodium"] as? [String] {
-//                    print(sodium)
-//                }
-                if let nutrtionalTags = json["nutritionalTags"] as? [String] {
-                    print(nutrtionalTags)
-                }
-                if let unsutainable = json["unsustainable"] as? [String] {
-                    print(unsutainable)
-                }
-            }
-        } catch let error as NSError {
-            print("Failed to load: \(error.localizedDescription)")
-        }
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting Food Name from search
+        barsearch = url + "Name"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given product name
+                    self.productNameLabel.text = value
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting Food Diet Labels from search
+        barsearch = url + "DietLabels"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given diet labels
+                    self.dietaryRestrictions.text = value
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting Food Allergy Labels from search
+        barsearch = url + "AllergyLabels"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given allergens
+                    self.allergens.text = value
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting HealthScore from search
+        barsearch = url + "Health"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given healthScore
+                    self.healthScoreLabel.text = "Health Score: " + value + "/10"
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting NutritionalTags from search
+        barsearch = url + "NutritionalTags"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given NutrtionalTags
+                    self.healthFactors.text = value
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
+        
+        //Getting sustainableScore from search
+        barsearch = url + "Unsustainable"
+        AF.request(barsearch)
+               .responseString { response in
+                   print("response: \(response)")
+                   switch response.result {
+                   case .success(let value):
+                       print("value**: \(value)")
+                    //setting label to given sustainabilityScore
+                    if(value == ""){
+                        self.susLabel.text = "Sustainable"
+                    }
+                    else{
+                        self.susLabel.text = "Unsustainable"
+                        self.susFactors.text = value
+                    }
+                  
+                   case .failure(let error):
+                       print(error)
+                   }
+               }
     }
     
-    
+        func getInfoFromScan(){
+            var url = "http://159.89.231.85:5000/foodSearch"
+            
+            
+            //Getting Food Image from search
+            var barsearch = url + "Image"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //getting image from URL
+                        let fileUrl = URL(string: value)!
+                        DispatchQueue.global().async { [weak self] in
+                            if let data = try? Data(contentsOf: fileUrl) {
+                                       if let image = UIImage(data: data) {
+                                           DispatchQueue.main.async {
+                                            //displaying image
+                                            self?.productImage.image = image
+                                           }
+                                       }
+                                   }
+                               }
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting Food Name from search
+            barsearch = url + "Name"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given product name
+                        self.productNameLabel.text = value
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting Food Diet Labels from search
+            barsearch = url + "DietLabels"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given diet labels
+                        self.dietaryRestrictions.text = value
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting Food Allergy Labels from search
+            barsearch = url + "AllergyLabels"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given allergens
+                        self.allergens.text = value
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting HealthScore from search
+            barsearch = url + "Health"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given healthScore
+                        self.healthScoreLabel.text = "Health Score: " + value + "/10"
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting NutritionalTags from search
+            barsearch = url + "NutritionalTags"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given NutrtionalTags
+                        self.healthFactors.text = value
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+            //Getting sustainableScore from search
+            barsearch = url + "Unsustainable"
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                           print("value**: \(value)")
+                        //setting label to given sustainabilityScore
+                        if(value == ""){
+                            self.susLabel.text = "Sustainable"
+                        }
+                        else{
+                            self.susLabel.text = "Unsustainable"
+                            self.susFactors.text = value
+                        }
+                      
+                       case .failure(let error):
+                           print(error)
+                       }
+                   }
+            
+        }
 
-    
-    
 }
+

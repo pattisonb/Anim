@@ -19,7 +19,7 @@ class ProductViewController: UIViewController {
     }
     
     @IBAction func StepperVotes(_ sender: UIStepper) {
-        votes.text = String(sender.value)
+        votes.text = Int(sender.value).description
     }
 
 }

@@ -16,7 +16,7 @@ class SearchViewController: UIViewController {
     
     @IBOutlet weak var searchButton: UIButton!
     
-    public var completionHandler: ((Data?) -> Void)?
+    public var completionHandler: ((String?) -> Void)?
     
     var JSON: Data?
 
@@ -36,7 +36,7 @@ class SearchViewController: UIViewController {
 
     
     @IBAction func searchButton(_ sender: Any) {
-//       var search = searchTextField.text
+//        var search = searchTextField.text
 //        var url = "http://159.89.231.85:5000/foodSearch/"
 //
 //        var barsearch = url + search!
@@ -44,6 +44,10 @@ class SearchViewController: UIViewController {
 //
 //        AF.request(barsearch).response { response in
 //            debugPrint(response)
+//
+//
+//            let JSON = response.result.self
+//            print(JSON)
 //        }
         
         
@@ -52,7 +56,7 @@ class SearchViewController: UIViewController {
         
         
         //sending data back to productView
-        completionHandler?(JSON!)
+        completionHandler?(searchTextField.text)
         dismiss(animated: true, completion: nil)
         
         

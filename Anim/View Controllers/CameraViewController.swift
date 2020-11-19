@@ -58,15 +58,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
 //        let data = imageView.image?.pngData()
         let data = imageView.image?.jpegData(compressionQuality: 0.5)
         makeRequest(image: data!)
-        
-        var requestString: String?
 
         AF.request("http://159.89.231.85:5000/barcode").response { response in
             debugPrint(response)
         
             
             let JSON = response.result.self
-
+            print(JSON)
         }
             //sending data back to productView
             completionHandler?(JSON)

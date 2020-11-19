@@ -6,6 +6,7 @@
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
 
+import Alamofire
 import UIKit
 
 class ProductViewController: UIViewController {
@@ -32,7 +33,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var search: UIButton!
     
     //variables
-    var recievedjson: Data?
+    var recievedjson: String?
     var data: Data?
     
     
@@ -43,31 +44,70 @@ class ProductViewController: UIViewController {
     }
     
      
-    @IBAction func didTapScan(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "CameraVC") as! CameraViewController
-        vc.modalPresentationStyle = .fullScreen
-        vc.completionHandler = {text in
-            self.recievedjson = text!
-            self.createInfo(inputString: self.recievedjson!)
-        }
-        present(vc,animated: true)
-        
-    }
+//    @IBAction func didTapScan(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(identifier: "CameraVC") as! CameraViewController
+//        vc.modalPresentationStyle = .fullScreen
+//        vc.completionHandler = {text in
+//            print(text)
+//            self.recievedjson = text!
+//            self.createInfo(inputString: self.recievedjson!)
+//        }
+//        present(vc,animated: true)
+//
+//    }
     
     
     @IBAction func didTapSearch(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "SearchVC") as! SearchViewController
         vc.modalPresentationStyle = .fullScreen
         vc.completionHandler = {text in
-            self.recievedjson = text!
-            self.createInfo(inputString: self.recievedjson!)
+            
+            var url = "http://159.89.231.85:5000/foodSearch/"
+            var barsearch = url + text!
+            
+//            AF.request(barsearch).responseString { response in
+//                debugPrint(response)
+                
+            AF.request(barsearch)
+                   .responseString { response in
+                       print("response: \(response)")
+                       switch response.result {
+                       case .success(let value):
+                        self.recievedjson = value
+                           print("value**: \(value)")
+                        self.createInfo(inputString: self.recievedjson!)
+                           print(type(of: value))
+                        
+                        
+                       case .failure(let error):
+                           print(error)
+                        
+                        
+                       }
+                   }
+            
+//            print("SUCCESS")
+//            print(self.recievedjson)
+//
+//            self.createInfo(inputString: self.recievedjson!)
+//
+                
         }
+        
+        
+        
+        
+            
+        
         present(vc,animated: true)
     }
     
-    func createInfo (inputString: Data){
-        self.data = inputString
+    func createInfo (inputString: String){
+        self.data = Data(inputString.utf8)
         
+        print("test")
+        print(inputString)
+        print(data)
         
         do {
             // make sure this JSON is in the format we expect
@@ -75,6 +115,8 @@ class ProductViewController: UIViewController {
                 // try to read out a string array
                 if let imageArr = json["image"] as? [String] {
                     let fileUrl = URL(string: imageArr[0])!
+                    
+                    print("Image")
                     
                     DispatchQueue.global().async { [weak self] in
                         if let data = try? Data(contentsOf: fileUrl) {
@@ -102,27 +144,27 @@ class ProductViewController: UIViewController {
                 if let health = json["health"] as? [String] {
                     print(health)
                 }
-                if let energy = json["Energy"] as? [String] {
-                    print(energy)
-                }
-                if let fat = json["Fat"] as? [String] {
-                    print(fat)
-                }
-                if let carbs = json["Carbs"] as? [String] {
-                    print(carbs)
-                }
-                if let sugar = json["Sugars"] as? [String] {
-                    print(sugar)
-                }
-                if let protein = json["Protein"] as? [String] {
-                    print(protein)
-                }
-                if let fiber = json["Fiber"] as? [String] {
-                    print(fiber)
-                }
-                if let sodium = json["Sodium"] as? [String] {
-                    print(sodium)
-                }
+//                if let energy = json["Energy"] as? [String] {
+//                    print(energy)
+//                }
+//                if let fat = json["Fat"] as? [String] {
+//                    print(fat)
+//                }
+//                if let carbs = json["Carbs"] as? [String] {
+//                    print(carbs)
+//                }
+//                if let sugar = json["Sugars"] as? [String] {
+//                    print(sugar)
+//                }
+//                if let protein = json["Protein"] as? [String] {
+//                    print(protein)
+//                }
+//                if let fiber = json["Fiber"] as? [String] {
+//                    print(fiber)
+//                }
+//                if let sodium = json["Sodium"] as? [String] {
+//                    print(sodium)
+//                }
                 if let nutrtionalTags = json["nutritionalTags"] as? [String] {
                     print(nutrtionalTags)
                 }

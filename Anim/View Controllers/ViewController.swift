@@ -57,10 +57,10 @@ class ViewController: UIViewController {
             }
             else {
                 
-                let tabViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.tabViewController) as? TabViewController
-
-                self.view.window?.rootViewController = tabViewController
-                self.view.window?.makeKeyAndVisible()
+//                let TabViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.TabViewController) as? TabViewController
+//
+//                self.view.window?.rootViewController = TabViewController
+//                self.view.window?.makeKeyAndVisible()
             }
         }
         

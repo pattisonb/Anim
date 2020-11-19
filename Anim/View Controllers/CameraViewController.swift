@@ -51,7 +51,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     func saveImage(){
         
-        let data = imageView.image?.jpegData(compressionQuality: 1)
+        let data = imageView.image?.jpegData(compressionQuality: 0.6)
         completionHandler?(data)
         dismiss(animated: true, completion: nil)
 

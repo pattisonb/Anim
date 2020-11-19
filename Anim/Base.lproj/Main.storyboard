@@ -721,8 +721,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="E8T-Hm-VVr"/>
                     <connections>
-                        <outlet property="allergenLabel" destination="hX5-h3-JVF" id="4ha-a2-4hL"/>
-                        <outlet property="allergens" destination="WOI-1s-dPM" id="q3t-iN-KVH"/>
+                        <outlet property="allergenLabel" destination="hX5-h3-JVF" id="VjB-lB-aY9"/>
+                        <outlet property="allergens" destination="6Cu-gM-4N3" id="9Ky-wV-PeU"/>
                         <outlet property="dietaryLabel" destination="WOI-1s-dPM" id="gLG-dw-qih"/>
                         <outlet property="dietaryRestrictions" destination="xc6-Ir-Vyg" id="s9s-F3-Tok"/>
                         <outlet property="healthFactors" destination="b7h-AN-Jgt" id="rIZ-b2-ilg"/>

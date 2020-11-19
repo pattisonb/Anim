@@ -17,7 +17,9 @@ class Reviews: Object {
 class RateViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet var table: UITableView!
-
+    
+    @IBOutlet weak var votes: UILabel!
+    
     private let realm = try! Realm()
     private var data = [Reviews]()
  
@@ -47,6 +49,10 @@ class RateViewController: UIViewController ,UITableViewDelegate, UITableViewData
         
     }
     
+    @IBAction func upVote(_ sender: UIStepper) {
+        votes.text = Int(sender.value).description
+    }
+    
     @IBAction func didTapAddButton(_ sender: Any) {
         
         guard let vc = storyboard?.instantiateViewController(identifier: "enter") as? EntryViewController else {
@@ -55,8 +61,7 @@ class RateViewController: UIViewController ,UITableViewDelegate, UITableViewData
         vc.completionHandler = { [weak self] in
             self?.refresh()
         }
-        //vc.title = "New Item"
-        //vc.navigationItem.largeTitleDisplayMode = .never
+
         navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -1,0 +1,69 @@
+{
+   "text":"upc:0044000043285",
+   "parsed":[
+      
+   ],
+   "hints":[
+      {
+         "food":{
+            "foodId":"food_aq15ab1bl181fpbzcbklhbarv4i8",
+            "label":"BREAKFAST BISCUITS",
+            "nutrients":{
+               "ENERC_KCAL":460.0,
+               "PROCNT":6.0,
+               "FAT":18.0,
+               "CHOCDF":72.0,
+               "FIBTG":6.0
+            },
+            "category":"Packaged foods",
+            "categoryLabel":"food",
+            "foodContentsLabel":"WHOLE GRAIN WHEAT FLOUR; SUGAR; ENRICHED FLOUR [WHEAT FLOUR; NIACIN; REDUCED IRON; THIAMIN MONONITRATE (VITAMIN B1); RIBOFLAVIN (VITAMIN B2); FOLIC ACID]; WHOLE GRAIN BLEND (ROLLED OATS; RYE FLAKES); PALM OIL; WHEAT STARCH; CANOLA OIL; COCOA (PROCESSED WITH ALKALI); MALT SYRUP (FROM CORN AND BARLEY); INVERT SUGAR; OLIGOFRUCTOSE; SOY LECITHIN; BAKING SODA; CHOCOLATE; SALT; CORNSTARCH; DISODIUM PYROPHOSPHATE; COCOA; Glyceryl; DATEM; NATURAL FLAVOR; FERRIC ORTHOPHOSPHATE (IRON); NIACINAMIDE; PYRIDOXINE HYDROCHLORIDE (VITAMIN B6); RIBOFLAVIN (VITAMIN B2); THIAMIN MONONITRATE (VITAMIN B1).",
+            "image":"https://www.edamam.com/food-img/50f/50f43b6a50f5f6da409801f7faea72ca.jpg",
+            "servingSizes":[
+               {
+                  "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_pack",
+                  "label":"Pack",
+                  "quantity":1.0
+               },
+               {
+                  "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+                  "label":"Gram",
+                  "quantity":50.0
+               }
+            ]
+         },
+         "measures":[
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_pack",
+               "label":"Pack",
+               "weight":50.0
+            },
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+               "label":"Serving",
+               "weight":50.0
+            },
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+               "label":"Gram",
+               "weight":1.0
+            },
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+               "label":"Ounce",
+               "weight":28.349523125
+            },
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+               "label":"Pound",
+               "weight":453.59237
+            },
+            {
+               "uri":"http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+               "label":"Kilogram",
+               "weight":1000.0
+            }
+         ]
+      }
+   ]
+}

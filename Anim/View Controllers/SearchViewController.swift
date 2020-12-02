@@ -5,13 +5,14 @@
 //  Created by Manov Jain on 11/14/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality of Search View Controller
 
 import UIKit
 import Alamofire
 
 class SearchViewController: UIViewController {
     
-    
+    // variables linked directly to buttons used in this VC
     @IBOutlet weak var searchTextField: UITextField!
     
     @IBOutlet weak var searchButton: UIButton!
@@ -20,7 +21,7 @@ class SearchViewController: UIViewController {
     
     var JSON: Data?
 
-    
+    // loading the view controller
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +31,7 @@ class SearchViewController: UIViewController {
 
     }
     
+    // once the user is done typing, the keyboard goes away
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

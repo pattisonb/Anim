@@ -5,6 +5,7 @@
 //  Created by Manov Jain on 9/1/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality for loading the application on a device
 
 import UIKit
 import Firebase
@@ -12,7 +13,7 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    // loading the application
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -21,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    // functionality if the app crashes
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        // Called when the application is about to terminate. Save data if appropriate.
     }
 
     // MARK: UISceneSession Lifecycle

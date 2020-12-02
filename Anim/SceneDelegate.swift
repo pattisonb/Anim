@@ -5,6 +5,7 @@
 //  Created by Manov Jain on 9/1/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality for loading the application on a device
 
 import UIKit
 
@@ -18,12 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-//
-//        self.window = UIWindow(windowScene: windowScene)
-//
-//        let newViewController = SignUpViewController()
-//        self.window?.rootViewController = newViewController
-//        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

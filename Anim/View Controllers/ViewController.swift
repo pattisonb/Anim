@@ -5,12 +5,15 @@
 //  Created by Maria Heredia on 11/14/20.
 //  Copyright © 2020 Maria Heredia. All rights reserved.
 //
+//  Purpose: Functionality of Login View Controller
+
 import UIKit
 import Alamofire
 import FirebaseAuth
 
 class ViewController: UIViewController {
 
+    // variables linked directly to buttons used in this VC
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -19,6 +22,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    // loading the view controller
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
@@ -29,19 +33,22 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    // once the user is done typing, the keyboard goes away
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 
+    // hiding the error label if the user types the correct input
     func setUpElements() {
     
         // Hide the error label
         errorLabel.alpha = 0
     }
     
+    // login button: this button is linked directly to the login button in the VC
+    // once the user is done login up, the account is authenticated through Googgle's
+    // firebase authenticatiion & the user can login with their pre-existing account
     @IBAction func loginTapped(_ sender: Any) {
-        
-        // TODO: Validate Text Fields
         
         // Create cleaned versions of the text field
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -56,11 +63,7 @@ class ViewController: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-                
-//                let TabViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.TabViewController) as? TabViewController
-//
-//                self.view.window?.rootViewController = TabViewController
-//                self.view.window?.makeKeyAndVisible()
+
             }
         }
         

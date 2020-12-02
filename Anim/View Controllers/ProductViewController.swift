@@ -5,6 +5,7 @@
 //  Created by Manov Jain on 11/19/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality of Product View Controller
 
 import Alamofire
 import UIKit

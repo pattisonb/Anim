@@ -5,6 +5,7 @@
 //  Created by Manov Jain on 11/5/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality of Gallery View Controller
 
 import UIKit
 

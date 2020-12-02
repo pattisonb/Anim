@@ -5,12 +5,14 @@
 //  Created by Maria Heredia on 11/4/20.
 //  Copyright © 2020 Maria Heredia. All rights reserved.
 //
+//  Purpose: Styling & Designing text fields, buttons & incorrect data
 
 import Foundation
 import UIKit
 
 class Utilities {
     
+    // style of textfields which is user inpit
     static func styleTextField(_ textfield:UITextField) {
         
         // Create the bottom line
@@ -28,6 +30,7 @@ class Utilities {
         
     }
     
+    // styling/design of the buttons
     static func styleFilledButton(_ button:UIButton) {
         
         // Filled rounded corner style
@@ -36,6 +39,7 @@ class Utilities {
         button.tintColor = UIColor.white
     }
     
+    // styling/design of the buttons
     static func styleHollowButton(_ button:UIButton) {
         
         // Hollow rounded corner style
@@ -45,6 +49,7 @@ class Utilities {
         button.tintColor = UIColor.black
     }
     
+    // style/design if password is incorrect
     static func isPasswordValid(_ password : String) -> Bool {
         
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")

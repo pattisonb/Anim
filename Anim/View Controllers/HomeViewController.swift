@@ -5,17 +5,19 @@
 //  Created by Manov Jain on 9/1/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality of Home View Controller
 
 import UIKit
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    // variables linked directly to buttons used in this VC
     @IBOutlet weak var imagePicked: UIImageView!
     
+    // loading the view controller
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func openCamera(_ sender: UIButton) {

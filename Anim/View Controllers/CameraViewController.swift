@@ -5,20 +5,21 @@
 //  Created by Manov Jain on 11/5/20.
 //  Copyright © 2020 ManovJain. All rights reserved.
 //
+//  Purpose: Functionality of Camera View Controller
 
 import UIKit
 import Alamofire
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
+    // variables linked directly to buttons used in this VC
     var imagePickerController : UIImagePickerController!
     
     public var completionHandler: ((Data?) -> Void)?
     
     var JSON: Data?
     
-    
-    
+    // loading the view controller
     override func viewDidLoad() {
         super.viewDidLoad()
 

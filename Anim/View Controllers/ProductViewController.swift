@@ -13,7 +13,6 @@ import UIKit
 class ProductViewController: UIViewController {
     
     //BigLabels
-    
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var healthScoreLabel: UILabel!
     @IBOutlet weak var susLabel: UILabel!
@@ -63,7 +62,8 @@ class ProductViewController: UIViewController {
                 print("sent")
             }
     
-     
+    //Using the scan button
+    //Takes user from current storyboard view controller (productView) to scan view controller
     @IBAction func didTapScan(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "CameraVC") as! CameraViewController
         vc.modalPresentationStyle = .fullScreen
@@ -71,18 +71,21 @@ class ProductViewController: UIViewController {
             self.data = text
             self.makeRequest(image: self.data!)
             self.getInfoFromScan()
+            //taking data from scan view controller
         }
         present(vc,animated: true)
 
     }
     
-    
+    //Using the search button
+    //Takes user from current storyboard view controller (productView) to search view controller
     @IBAction func didTapSearch(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "SearchVC") as! SearchViewController
         vc.modalPresentationStyle = .fullScreen
         vc.completionHandler = {text in
             self.recievedSearch = text
             self.getInfoFromSearch(inputString: self.recievedSearch!)
+            //taking data from search view controller
        }
                 present(vc,animated: true)
     }
@@ -90,9 +93,10 @@ class ProductViewController: UIViewController {
 
     
     func getInfoFromSearch(inputString: String){
-        var url = "http://159.89.231.85:5000/foodSearch"
-        
-        var firstUrl = url + "/" + inputString
+        //URL to recieve info with a search term
+        let url = "http://159.89.231.85:5000/foodSearch"
+        //adding search term to the URL
+        let firstUrl = url + "/" + inputString
         
         AF.request(firstUrl).response { response in
                    debugPrint(response)
@@ -227,7 +231,8 @@ class ProductViewController: UIViewController {
     }
     
         func getInfoFromScan(){
-            var url = "http://159.89.231.85:5000/foodSearch"
+            //URL for getting info with a scan
+            let url = "http://159.89.231.85:5000/foodSearch"
             
             
             //Getting Food Image from search

@@ -28,34 +28,29 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     @IBOutlet weak var imageView: UIImageView!
     
+    //this function allows user to use their phone's camera functionality
     @IBAction func takePhotoButton(_ sender: Any) {
-        
         imagePickerController = UIImagePickerController()
         
         imagePickerController.delegate = self
         imagePickerController.sourceType = .camera
         
         present(imagePickerController, animated: true, completion: nil)
-        
-        
     }
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-    imagePickerController.dismiss(animated: true, completion: nil)
-        
-    imageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-    
-    saveImage();
+        imagePickerController.dismiss(animated: true, completion: nil)
+        imageView.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        //calling saveImage function
+        saveImage();
     }
     
     
-    
+    //saves image to jpegData type and sends it back to product view
     func saveImage(){
-        
         let data = imageView.image?.jpegData(compressionQuality: 0.6)
         completionHandler?(data)
         dismiss(animated: true, completion: nil)
-
     }
 
 

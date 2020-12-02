@@ -10,7 +10,8 @@
 import Foundation
 
 struct Constants {
-    
+    //allows the tab view controller to be used
+    //so that the nav bar is useable
     struct Storyboard {
         
         static let TabViewController = "TabVC"

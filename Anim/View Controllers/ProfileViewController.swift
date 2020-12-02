@@ -19,10 +19,11 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //autherizes the current user
         let user = Auth.auth().currentUser
         
         if let user = user {
-            
+            //gets the email of the user and displays it on their profile page
             let firstName = user.email
             self.Name.text = firstName;
           }

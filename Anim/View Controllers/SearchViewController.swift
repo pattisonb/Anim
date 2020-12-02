@@ -25,6 +25,7 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //allows the user to tap anywhere on the screen to make the keyboard go away
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
        tap.cancelsTouchesInView = false
@@ -39,6 +40,7 @@ class SearchViewController: UIViewController {
     
     @IBAction func searchButton(_ sender: Any) {
 
+        //a dummy image string used for testing
         
         let str = "{ \"image\": [\"https://upload.wikimedia.org/wikipedia/commons/0/07/Honeycrisp-Apple.jpg\"], \"foodName\": [\"Food name\"], \"dietLabels\": [\"Low Carb\"], \"allergyLabels\": [\"Dairy Free\", \"Milk Free\", \"Peanut Free\", \"Tree Nut Free\", \"Soy Free\", \"Fish Free\", \"Shellfish Free\", \"Alcohol Free\"], \"health\": 0, \"Energy\" : [\"1461.59kcal\"], \"Fat\": [\"104.18g\"], \"Carbs\": [\"27.64g\"], \"Sugars\": [\"15.06g\"], \"Protein\": [\"98.16g\"], \"Fiber\": [\"3.59g\"], \"Sodium\": [\"446.2mg\"], \"nutritionalTags\": [\"High Fat\", \"Low Fiber\", \"High Protein\", \"High Cholesterol\"], \"unsustainable\": [\"Palm Oil\"] }"
         let data = Data(str.utf8)
